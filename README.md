@@ -14,7 +14,7 @@ How to play:
 
 ## Plan
 
-<img src="https://lucid.app/lucidchart/7436b5db-3070-4040-9047-23b42aa3a03e/edit?viewport_loc=620%2C417%2C692%2C293%2C0_0&invitationId=inv_bcf939ef-c822-470a-9f32-9ada6677014d" width="128">
+<img src="Users/karinasantana/sei-53/project1/images/Flowchart - Tic Tac Toe.jpeg" width="128">
 
 **Step1:**
 Create 2 inputs to put the players name and store them in variables.
