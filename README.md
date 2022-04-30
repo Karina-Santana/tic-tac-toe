@@ -14,7 +14,7 @@ How to play:
 
 ## Plan
 
-<img src="./images/Flowchart - Tic Tac Toe.jpeg" alt="">
+<img src="Users/karinasantana/sei-53/project1/images/Flowchart - Tic Tac Toe.jpeg" width="128">
 
 **Step1:**
 Create 2 inputs to put the players name and store them in variables.
