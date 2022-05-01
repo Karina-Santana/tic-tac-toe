@@ -33,7 +33,7 @@ If it is working, continue with the other conditions.
 
 **Step4**
 Do not allow a player to click 2 consecutive times
-Create a for loop with an EventListener and an if statement with the condition that if the user clicks on a box that has an 'X' value or 'O' value, print that the user cannot click there and think of a way not to let it possible for the user to click on it.
+Create a for loop with an EventListener and an if statement with the condition that if the user clicks on a box that has an 'X' value or 'O' value, print that the user cannot click there and use the pointerEvents method to not let the user to click on it anymore.
 
 **Step5**
 Create a count variable with a value of 0 and add an else if statement in the if of step 3 saying that if the count variable is equal to 9 print that nobody won.
@@ -46,3 +46,12 @@ Think about how to show the player's name along with that he won or that no one 
 
 **Step8**
 Think about how to reduce and clean up the code a bit. Try storing if statements conditions in variables with arrays to see if it works.
+
+**Step9**
+Create an event listener so that when the user clicks the Play Again button, all the boxes become empty. The method pointerEvents can help with that.
+
+**Step 10**
+Create a for loop and if statement to count the scores of both players
+
+**Step 11**
+Make the website responsive
