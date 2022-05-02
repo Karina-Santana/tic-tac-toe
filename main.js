@@ -50,8 +50,8 @@ savBtn2.addEventListener('click', function (event) {
 
 var scorePlayer1 = document.querySelector('.score1');
 var scorePlayer2 = document.querySelector('.score2');
-scorePlayer1.textContent = 0;
-scorePlayer2.textContent = 0;
+// scorePlayer1.textContent = 0;
+// scorePlayer2.textContent = 0;
 
 var boxDivs = document.querySelectorAll('div');
 
@@ -156,7 +156,7 @@ for (let i = 0; i < boxDivs.length; i++) {
 
 
 
-
+//STEP 10
 var resetBtn = document.querySelector('.reset-scores')
 
 for (let i = 0; i < boxDivs.length; i++) {

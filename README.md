@@ -63,7 +63,10 @@ Create variables that grab the players scores and put them in the checkWinner fu
 So each time the player wins, the score will increase + 1 point.
 
 **Step 10**
-Think about how to reduce and clean up the code a bit. Try storing if statements conditions in variables with arrays to see if it works.
+Create a for loop with an Event Listener inside so that when the user clicks on the 'Reset Scores' button, the boxes return with an empty value, in white background color, it will be clickable again, the PlayerTurn variant starts with the value of 'X', the variant 'counter' will start with a value of 0, the session where it shows the game result will start with an empty value and the two score variables will start with a value of 0. With that, everything will be reset.
 
 **Step 11**
+Think about how to reduce and clean up the code a bit. Try storing if statements conditions in variables with arrays to see if it works.
+
+**Step 12**
 Make the website responsive for mobile.
