@@ -4,6 +4,7 @@ body {
     background-image: url(./images/modelo2.jpg);
     background-size: 1350px;
     background-repeat: no-repeat;
+    /* max-width: */
     /* background-size: cover; */
     /* background-size: auto; */
     /* ver qual eh o melhor desse dois acima */
@@ -37,13 +38,14 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap: 200px;
+    gap: 100px;
     margin-bottom: 30px;
 }
 
 .header-player-1 {
     background-color: rgb(236, 236, 236);
     margin-left: 100px;
+    margin-right: 130px;
     padding: 15px;
     width: fit-content;
     text-align: center;
@@ -53,10 +55,15 @@ h2 {
 .header-player-2 {
     background-color: rgb(236, 236, 236);
     margin-right: 100px;
+    margin-left: 130px;
     padding: 15px;
     width: fit-content;
     text-align: center;
     border: 3px solid black;
+}
+
+.winner {
+    font-size: 2rem;
 }
 
 .player-1-name {
@@ -120,7 +127,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-div {
+.game-section div {
     display: flex;
     width: 100px;
     height: 100px;
@@ -128,6 +135,7 @@ div {
     justify-content: center;
     border: 3px solid black;
     background-color: white;
+    font-size: 4rem;
 }
 
 section {
