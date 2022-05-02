@@ -15,10 +15,21 @@
     </header>
     <main>
         <section class="header-section">
-            <h2>Player 1:</h2>
-            <input type="" class="player-1-name" placeholder="Write your name here">
-            <h2>Player 2:</h2>
-            <input type="" class="player-2-name" placeholder="Write your name here">
+            <section class="header-player-1">
+                <h2 class="title-player-1">Player 1:</h2>
+                <form action="">
+                    <input class="player-1-name" type="text" placeholder="Write your name here">
+                    <button class="save-1">Save</button>
+                </form>
+            </section>
+            <section class="winner"></section>
+            <section class="header-player-2">
+                <h2>Player 2:</h2>
+                <form action="">
+                    <input class="player-2-name" type="text" placeholder="Write your name here">
+                    <button class="save-2">Save</button>
+                </form>
+            </section>
         </section>
         <section class="game-section">
             <div class="box1"></div>
@@ -32,6 +43,15 @@
             <div class="box9"></div>
         </section>
     </main>
+    <footer>
+        <section class="score-reset">
+            <p class="score-player1">Score: <span class="score1">0</span></p>
+            <button class="play-again">Play Again</button>
+            <p class="score-player2">Score: <span class="score2">0</span></p>
+        </section>
+        <a href="https://www.freepik.com/brgfx" target="_blank" class="freepik">Designed by brgfx /
+            Freepik</a>
+    </footer>
 
     <script src="main.js"></script>
 </body>
