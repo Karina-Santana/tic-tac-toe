@@ -115,11 +115,11 @@ var player1Name = document.querySelector('.title-player-1') // Player1: title
 // isso ta funcionando no console: document.querySelector('.player-1-name').value = document.querySelector('.title-player-1').textContent
 
 savBtn1.addEventListener('click', function (event) {
-    event.preventDefault()
+    event.preventDefault();
     console.log(player1.value)
-    player1.value = player1Name.textContent
-    //posso alterar o placeholder tbm? Para 'Change your name here'
-
+    document.querySelector('.title-player-1').textContent = document.querySelector('.player-1-name').value
+    player1Name.textContent = player1.value
+    //como faco para alterar o placeholder para 'Change your name here'
 })
 
 
@@ -140,3 +140,6 @@ for (let i = 0; i < boxDivs.length; i++) {
 }
 
 
+//como deixar a posicao da sessao winer permanente
+//como alterar a fonte dos x e o
+//como fazer funcionar o input

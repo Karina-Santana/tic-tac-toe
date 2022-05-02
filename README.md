@@ -4,13 +4,15 @@
 
 This is a Tic Tac Toe game.
 
+<a href="https://karina-santana.github.io/tic-tac-toe/">Click here to play the game</a>
+
 How to play:
 
 - First add the names of the two players, save and start playing.
 - Go clicking on the boxes trying to form a combination of 3 boxes with your symbol.
 - You can combine 3 boxes horizontally, vertically or both diagonally.
 - The first player to get a combination of 3 boxes wins.
-- To play again, press the 'Play Again' button.
+- To reset the game, press the 'Play Again' button.
 
 ## Plan
 
@@ -45,13 +47,13 @@ Create an Event Listener for when the user clicks the save button on the input, 
 Think about how to show the player's name along with that he won or that no one won without using console.log or alert, but creating an html element on the screen.
 
 **Step8**
-Think about how to reduce and clean up the code a bit. Try storing if statements conditions in variables with arrays to see if it works.
-
-**Step9**
 Create an event listener so that when the user clicks the Play Again button, all the boxes become empty. The method pointerEvents can help with that.
 
+**Step9**
+Create a for loop and if statement to count the scores of both players.
+
 **Step 10**
-Create a for loop and if statement to count the scores of both players
+Think about how to reduce and clean up the code a bit. Try storing if statements conditions in variables with arrays to see if it works.
 
 **Step 11**
-Make the website responsive
+Make the website responsive for mobile.
