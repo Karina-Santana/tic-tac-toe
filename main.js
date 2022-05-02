@@ -57,7 +57,6 @@ function removeEventListeners() {
 }
 
 function checkWinner() {
-
     if (box1.textContent === 'X' && box2.textContent === 'X' && box3.textContent === 'X' || box4.textContent === 'X' && box5.textContent === 'X' && box6.textContent === 'X' || box7.textContent === 'X' && box8.textContent === 'X' && box9.textContent === 'X') {
         playerWinner.textContent = "The winner is " + player1Name.textContent + " 🏆"
         scorePlayer1.textContent = Number(scorePlayer1.textContent) + 1;
@@ -65,18 +64,23 @@ function checkWinner() {
     } else if (box1.textContent === 'X' && box4.textContent === 'X' && box7.textContent === 'X' || box2.textContent === 'X' && box5.textContent === 'X' && box8.textContent === 'X' || box3.textContent === 'X' && box6.textContent === 'X' && box9.textContent === 'X') {
         playerWinner.textContent = "The winner is " + player1Name.textContent + " 🏆"
         scorePlayer1.textContent = Number(scorePlayer1.textContent) + 1;
+        removeEventListeners()
     } else if (box1.textContent === 'X' && box5.textContent === 'X' && box9.textContent === 'X' || box3.textContent === 'X' && box5.textContent === 'X' && box7.textContent === 'X') {
         playerWinner.textContent = "The winner is " + player1Name.textContent + " 🏆"
         scorePlayer1.textContent = Number(scorePlayer1.textContent) + 1;
+        removeEventListeners()
     } else if (box1.textContent === 'O' && box2.textContent === 'O' && box3.textContent === 'O' || box4.textContent === 'O' && box5.textContent === 'O' && box6.textContent === 'O' || box7.textContent === 'O' && box8.textContent === 'O' && box9.textContent === 'O') {
         playerWinner.textContent = "The winner is " + player2Name.textContent + " 🏆"
         scorePlayer2.textContent = Number(scorePlayer2.textContent) + 1;
+        removeEventListeners()
     } else if (box1.textContent === 'O' && box4.textContent === 'O' && box7.textContent === 'O' || box2.textContent === 'O' && box5.textContent === 'O' && box8.textContent === 'O' || box3.textContent === 'O' && box6.textContent === 'O' && box9.textContent === 'O') {
         playerWinner.textContent = "The winner is " + player2Name.textContent + " 🏆"
         scorePlayer2.textContent = Number(scorePlayer2.textContent) + 1;
+        removeEventListeners()
     } else if (box1.textContent === 'O' && box5.textContent === 'O' && box9.textContent === 'O' || box3.textContent === 'O' && box5.textContent === 'O' && box7.textContent === 'O') {
         playerWinner.textContent = "The winner is " + player2Name.textContent + " 🏆"
         scorePlayer2.textContent = Number(scorePlayer2.textContent) + 1;
+        removeEventListeners()
     } else if (counter === 9) {
         playerWinner.textContent = "That's a draw!"
     }
