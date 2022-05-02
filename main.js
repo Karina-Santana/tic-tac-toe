@@ -1,5 +1,5 @@
-var player1 = document.querySelector('player-1-name')
-var player2 = document.querySelector('player-2-name')
+var player1 = document.querySelector('.player-1-name')
+var player2 = document.querySelector('.player-2-name')
 var playerTurn = 'X'
 var counter = 0
 
@@ -13,44 +13,57 @@ var box7 = document.querySelector('.box7')
 var box8 = document.querySelector('.box8')
 var box9 = document.querySelector('.box9')
 
-// var row1 = [box1.textContent, box2.textContent, box3.textContent]
-// var row2 = [box4.textContent, box5.textContent, box6.textContent]
-// var row3 = [box7.textContent, box8.textContent, box9.textContent]
-// var column1 = []
-// if (row1[0] === 'X' && row1[1] === 'X' && row[2] === 'X')
 
 var parentWinner = document.querySelector('.winner');
 var playerWinner = document.createElement('h3');
 parentWinner.appendChild(playerWinner);
 
+//INPUTS AND SAVE BUTTONS:
+
+var savBtn1 = document.querySelector('.save-1')  //button
+var secWinner = document.querySelector('.winner') // parent
+var savBtn2 = document.querySelector('.save-2') //button
+
+var player1Name = document.querySelector('.title-player-1') // Player1: title
+var player2Name = document.querySelector('.title-player-2') // Player1: title
+
+savBtn1.addEventListener('click', function (event) {
+    event.preventDefault();
+    player1Name.textContent = player1.value
+    player1.value = ''
+    player1.placeholder = 'Change your name here'
+})
+
+
+savBtn2.addEventListener('click', function (event) {
+    event.preventDefault();
+    player2Name.textContent = player2.value
+    player2.value = ''
+    player2.placeholder = 'Change your name here'
+})
+
+
 function checkWinner() {
     for (let i = 0; i < boxDivs.length; i++) {
         if (box1.textContent === 'X' && box2.textContent === 'X' && box3.textContent === 'X' || box4.textContent === 'X' && box5.textContent === 'X' && box6.textContent === 'X' || box7.textContent === 'X' && box8.textContent === 'X' && box9.textContent === 'X') {
-            console.log('Player 1 won!')
-            playerWinner.textContent = "The winner is Player1 🏆"
+            playerWinner.textContent = "The winner is " + player1Name.textContent + " 🏆"
             boxDivs[i].style.pointerEvents = "none";
         } else if (box1.textContent === 'X' && box4.textContent === 'X' && box7.textContent === 'X' || box2.textContent === 'X' && box5.textContent === 'X' && box8.textContent === 'X' || box3.textContent === 'X' && box6.textContent === 'X' && box9.textContent === 'X') {
-            console.log('Player 1 won!')
-            playerWinner.textContent = "The winner is Player1 🏆"
+            playerWinner.textContent = "The winner is " + player1Name.textContent + " 🏆"
             boxDivs[i].style.pointerEvents = "none";
         } else if (box1.textContent === 'X' && box5.textContent === 'X' && box9.textContent === 'X' || box3.textContent === 'X' && box5.textContent === 'X' && box7.textContent === 'X') {
-            console.log('Player 1 won!')
-            playerWinner.textContent = "The winner is Player1 🏆"
+            playerWinner.textContent = "The winner is " + player1Name.textContent + " 🏆"
             boxDivs[i].style.pointerEvents = "none";
         } else if (box1.textContent === 'O' && box2.textContent === 'O' && box3.textContent === 'O' || box4.textContent === 'O' && box5.textContent === 'O' && box6.textContent === 'O' || box7.textContent === 'O' && box8.textContent === 'O' && box9.textContent === 'O') {
-            console.log('Player 2 won!')
-            playerWinner.textContent = "The winner is Player2 🏆"
+            playerWinner.textContent = "The winner is " + player2Name.textContent + " 🏆"
             boxDivs[i].style.pointerEvents = "none";
         } else if (box1.textContent === 'O' && box4.textContent === 'O' && box7.textContent === 'O' || box2.textContent === 'O' && box5.textContent === 'O' && box8.textContent === 'O' || box3.textContent === 'O' && box6.textContent === 'O' && box9.textContent === 'O') {
-            console.log('Player 2 won!')
-            playerWinner.textContent = "The winner is Player2 🏆"
+            playerWinner.textContent = "The winner is " + player2Name.textContent + " 🏆"
             boxDivs[i].style.pointerEvents = "none";
         } else if (box1.textContent === 'O' && box5.textContent === 'O' && box9.textContent === 'O' || box3.textContent === 'O' && box5.textContent === 'O' && box7.textContent === 'O') {
-            console.log('Player 2 won!')
-            playerWinner.textContent = "The winner is Player2 🏆"
+            playerWinner.textContent = "The winner is " + player2Name.textContent + " 🏆"
             boxDivs[i].style.pointerEvents = "none";
         } else if (counter === 9) {
-            console.log(`Nobody won!`)
             playerWinner.textContent = "That's a draw!"
             boxDivs[i].style.pointerEvents = "none";
         }
@@ -60,7 +73,7 @@ function checkWinner() {
 
 
 
-
+//switch between players
 
 var parentBox = document.querySelector('.game-section')
 function turn() {
@@ -101,28 +114,6 @@ for (let i = 0; i < boxDivs.length; i++) {
 
 
 
-//INPUTS AND SAVE BUTTONS:
-
-var savBtn1 = document.querySelector('.save-1')  //button
-var player1 = document.querySelector('player-1-name') //input
-var secWinner = document.querySelector('.winner') // parent
-
-var savBtn2 = document.querySelector('.save-2') //button
-
-var player1Name = document.querySelector('.title-player-1') // Player1: title
-
-
-// isso ta funcionando no console: document.querySelector('.player-1-name').value = document.querySelector('.title-player-1').textContent
-
-savBtn1.addEventListener('click', function (event) {
-    event.preventDefault();
-    console.log(player1.value)
-    document.querySelector('.title-player-1').textContent = document.querySelector('.player-1-name').value
-    player1Name.textContent = player1.value
-    //como faco para alterar o placeholder para 'Change your name here'
-})
-
-
 
 //para o botao reset, usar isso para deixar as divs clicaveis de novo:  .style.pointerEvents = 'auto';
 
@@ -140,6 +131,6 @@ for (let i = 0; i < boxDivs.length; i++) {
 }
 
 
-//como deixar a posicao da sessao winer permanente
+
+//como deixar a posicao da secao winer permanente
 //como alterar a fonte dos x e o
-//como fazer funcionar o input
