@@ -1,14 +1,10 @@
 body {
     margin: 0;
     margin-bottom: 20px;
-    background-image: url(./images/modelo2.jpg);
-    background-size: 1350px;
+    background-image: url(./images/isolated-space-background/31499.jpg);
     background-repeat: no-repeat;
-    /* max-width: */
-    /* background-size: cover; */
-    /* background-size: auto; */
-    /* ver qual eh o melhor desse dois acima */
-
+    height: fit-content;
+    background-size: cover;
 }
 
 main {
@@ -38,7 +34,7 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap: 100px;
+    /* gap: 100px; */
     margin-bottom: 30px;
 }
 
@@ -63,7 +59,7 @@ h2 {
 }
 
 .winner {
-    font-size: 2rem;
+    font-size: 23px;
 }
 
 .player-1-name {
@@ -141,6 +137,26 @@ h2 {
     font-weight: bold;
 }
 
+.aliens-game {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 auto;
+}
+
+.alien1,
+.alien2 {
+    height: 350px;
+    width: fit-content;
+}
+
+.alien1 {
+    margin-left: 100px;
+}
+
+.alien2 {
+    margin-right: 100px;
+}
+
 section {
     text-align: center;
 }
@@ -158,7 +174,7 @@ p {
     margin-left: 15px;
     margin-right: 15px;
     padding: 15px;
-    width: fit-content;
+    width: 300px;
     text-align: center;
 }
 
@@ -180,10 +196,24 @@ p {
     margin-left: 20px;
 }
 
-.score-reset {
+.reset-scores {
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.play-again-sec {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: -15px;
 }
 
 .score-player1,
@@ -194,9 +224,9 @@ p {
 }
 
 .score-player1 {
-    margin-left: 90px;
+    margin-left: 25px;
 }
 
 .score-player2 {
-    margin-right: 90px;
+    margin-right: 25px;
 }
