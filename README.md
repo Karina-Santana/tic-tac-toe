@@ -17,7 +17,7 @@ How to play:
 
 ## Plan
 
-<img src="./images/Flowchart-Tic-Tac-Toe.jpeg">
+<img src="./images/Flowchart-TicTacToe.jpeg">
 
 **Step1:**
 Create all HTML elements:
