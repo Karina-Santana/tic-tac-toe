@@ -197,6 +197,13 @@ p {
     margin-left: 20px;
 }
 
+.karina {
+    font-size: 15px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
 .reset-scores {
     height: fit-content;
     display: grid;
